@@ -10,8 +10,7 @@ RUN yum install --skip-broken -y nginx php php-fpm php-redis php-mbstring && \
 	yum install -y git php-pear php-devel gcc gcc-c++ autoconf automake  && \
 	yum clean all
 
-
-pcre-deve
+RUN yum install -y pcre pcre-devel
 RUN yum install -y python-pip && \
 	yum clean all && \
 	pip install supervisor supervisor-stdout && \
