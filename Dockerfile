@@ -18,7 +18,6 @@ RUN yum install -y python-pip && \
 
 # add php yaf ext
 RUN yum install -y git
-RUN 
 WORKDIR /php-yaf
 RUN git clone -b php5 https://github.com/laruence/php-yaf /tmp/php-yaf
 	cd /tmp/php-yaf && \
